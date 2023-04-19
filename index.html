@@ -1,1 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
 
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="style.css">
+	    <title>Calculadora do Wellingtinho</title>
+    </head>
+
+    <body class="corpo">
+
+        <div class="itens">
+            <script>
+                function Cubo() {
+                    //window.alert("teste")
+                    var var1 = document.getElementById("ValCubo");
+                    //window.alert(var1.value + " " + var2.value)
+                    document.getElementById("ResultadoCubo").innerText = var1.value * var1.value * var1.value;
+                }
+            </script>
+        </div>
+
+        <div class="itens">
+            <script>
+                function Celsius() {
+                    //window.alert("teste")
+                    var var1 = document.getElementById("ValFahr");
+                    //window.alert(var1.value + " " + var2.value)
+                    document.getElementById("ResultadoCelsius").innerText = (var1.value - 32) * 0.5556;
+                }
+            </script>
+        </div>
+
+        <div class="itens">
+            <script>
+                function Triangulo() {
+                    //window.alert("teste")
+                    var var1 = document.getElementById("ValBase");
+                    var var2 = document.getElementById("ValAltura");
+                    //window.alert(var1.value + " " + var2.value)
+                    document.getElementById("ResultadoTriangulo").innerText = var1.value * var2.value / 2;
+                }
+            </script>
+        </div>
+
+        <div class="itens">
+            <script>
+                function AreaCirculo() {
+                    //window.alert("teste")
+                    var var1 = document.getElementById("ValRaio");
+                    var pi = 3.14;
+                    //window.alert(var1.value + " " + var2.value)
+                    document.getElementById("ResultadoAreaCirculo").innerText = var1.value * var1.value * pi;
+                }
+            </script>
+        </div>
+
+        <div class="itens">
+            <script>
+                function PerimetroCirculo() {
+                    //window.alert("teste")
+                    var var1 = document.getElementById("ValDiametro");
+                    var pi = 3.14;
+                    //window.alert(var1.value + " " + var2.value)
+                    document.getElementById("ResultadoPerimetroCirculo").innerText = var1.value * pi;
+                }
+            </script>
+        </div>
+
+        <div class="itens">
+            <script>
+                function Desconto() {
+                    //window.alert("teste")
+                    var var1 = document.getElementById("ValSemDesconto");
+                    //window.alert(var1.value + " " + var2.value)
+                    document.getElementById("ResultadoDesconto").innerText = var1.value * 0.05;
+                }
+            </script>
+        </div>
+
+        <div class="itens">
+            <script>
+                function Idade() {
+                    //window.alert("teste")
+                    var var1 = document.getElementById("ValIdade");
+                    //window.alert(var1.value + " " + var2.value)
+                    document.getElementById("ResultadoDefinicao").innerText =  2023 - var1.value;
+                    if (var1.value <=2005) { 
+                        window.alert ("Maior de idade");
+                        } 
+                        else {
+                        window.alert ("Menor de idade");
+                        } 
+                }
+            </script>
+        </div>
+
+        <div class="itens">
+            <script>
+                function Combustivel() {
+                    //window.alert("teste")
+                    var var1 = document.getElementById("ValCombustivel");
+                    //window.alert(var1.value + " " + var2.value)
+                    document.getElementById("ResultadoCombustivel").innerText = var1.value / 5;
+                }
+            </script>
+        </div>
+
+        <div class="itens">
+            <script>
+                function Percorrer() {
+                    //window.alert("teste")
+                    var var1 = document.getElementById("ValPercorrer");
+                    //window.alert(var1.value + " " + var2.value)
+                    document.getElementById("ResultadoPercorrer").innerText = var1.value * 20;
+                }
+            </script>
+        </div>
+
+        <h1>Descobrir valor ao Cubo...</h1>
+        <input id="ValCubo" value="Valor p/ elevar...">
+        <button onclick="Cubo()">Elevar</button>
+        <p id="ResultadoCubo">XXXX</p>
+
+        <h1>Coverter Fahrenheit para Celsius...</h1>
+        <input id="ValFahr" value="Graus em Fahrenheit...">
+        <button onclick="Celsius()">Converter</button>
+        <p id="ResultadoCelsius">XXXX</p>
+
+        <h1>Descobrir área de um Triângulo...</h1>
+        <input id="ValBase" value="Base...">
+        <input id="ValAltura" value="Altura...">
+        <button onclick="Triangulo()">Descobrir área</button>
+        <p id="ResultadoTriangulo">XXXX</p>
+
+        <h1>Descobrir área de um Círculo...</h1>
+        <input id="ValRaio" value="Raio...">
+        <button onclick="AreaCirculo()">Descobrir área</button>
+        <p id="ResultadoAreaCirculo">XXXX</p>
+
+        <h1>Descobrir perímetro de um Círculo...</h1>
+        <input id="ValDiametro" value="Diametro...">
+        <button onclick="PerimetroCirculo()">Descobrir perímetro</button>
+        <p id="ResultadoPerimetroCirculo">XXXX</p>
+
+        <h1>Achar 5% de desconto...</h1>
+        <input id="ValSemDesconto" value="Valor...">
+        <button onclick="Desconto()">Achar Desconto</button>
+        <p id="ResultadoDesconto">XXXX</p>
+
+        <h1>Descobrir Definição de Idade...</h1>
+        <input id="ValIdade" value="Ano de nascimento...">
+        <button onclick="Idade()">Descobrir definição</button>
+        <p id="ResultadoDefinicao">XXXX</p>
+
+        <h1>Comprar Combustível...</h1>
+        <input id="ValCombustivel" value="Valor em dinheiro">
+        <button onclick="Combustivel()">Caucular Combustível</button>
+        <p id="ResultadoCombustivel">XXXX</p>
+
+        <h1>Quanto percorrerá...</h1>
+        <input id="ValPercorrer" value="Litros de combustível">
+        <button onclick="Percorrer()">Caucular Distância</button>
+        <p id="ResultadoPercorrer">XXXX</p>
+
+    </body>
+
+</html>
